@@ -1,0 +1,28 @@
+/* Custom styles for the app */
+.gradient-text {
+  background: linear-gradient(to right, #facc15, #ec4899, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Ensure video elements fill their containers */
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+/* Fix for iOS Safari */
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
+/* Debug styles to ensure video visibility */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
